@@ -5,9 +5,7 @@
 #include "winsock_initializer.hpp"
 
 namespace net {
-	using uncopy = utils::non_copyable;
-	
-	class tcp_socket : public uncopy{
+	class tcp_socket{
 	public:
 		tcp_socket() {};
 
@@ -31,8 +29,10 @@ namespace net {
 		}
 
 		~tcp_socket() {}
-	private:
 
+	private:
+		tcp_socket(const tcp_socket&) = delete;
+		tcp_socket& operator=(const tcp_socket&) = delete;
 
 	private:
 		SOCKET socket_ = INVALID_SOCKET;

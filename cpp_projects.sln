@@ -5,11 +5,6 @@ VisualStudioVersion = 17.10.34916.146
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "net", "net\net.vcxproj", "{BA1DF79A-8A17-422F-B9D6-A336F7B8EDF4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common_inc", "common_inc", "{A1DAFFFA-D84A-407D-A181-2C734B03296E}"
-	ProjectSection(SolutionItems) = preProject
-		common_inc\non_copyable.hpp = common_inc\non_copyable.hpp
-	EndProjectSection
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test\test.vcxproj", "{631CCD7D-DA16-4149-8971-A3BA36A69B81}"
 EndProject
 Global

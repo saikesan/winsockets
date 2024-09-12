@@ -8,4 +8,9 @@
       <UniqueIdentifier>{cdb5a230-c4ee-494b-9cac-4eb9a6a19196}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

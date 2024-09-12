@@ -5,12 +5,9 @@
 #include <WinSock2.h>
 #include <WS2tcpip.h>
 
-#include "non_copyable.hpp"
-
 namespace net {
-	using uncopy = utils::non_copyable;
 
-	class winsock_initializer : public uncopy { // It's Singlton.
+	class winsock_initializer{ // It's Singlton.
 		bool is_initialized_ = false;
 	
 		winsock_initializer() {
@@ -23,6 +20,9 @@ namespace net {
 			if(is_initialized_)
 				WSACleanup();
 		}
+
+		winsock_initializer(const winsock_initializer&) = delete;
+		winsock_initializer& operator=(const winsock_initializer&) = delete;
 
 	public:
 		static winsock_initializer& init() {
