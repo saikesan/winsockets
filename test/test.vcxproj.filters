@@ -12,5 +12,13 @@
     <ClCompile Include="main.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="thread_worker.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="thread_worker.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

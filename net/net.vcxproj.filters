@@ -9,11 +9,34 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="inc\tcp_socket.hpp">
-      <Filter>inc</Filter>
-    </ClInclude>
     <ClInclude Include="inc\winsock_initializer.hpp">
       <Filter>inc</Filter>
     </ClInclude>
+    <ClInclude Include="inc\net.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\socket_base.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\client_socket.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\server_socket.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tcp_client.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tcp_server.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\net_exception.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\net.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

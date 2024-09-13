@@ -5,7 +5,7 @@
 #include <WinSock2.h>
 #include <WS2tcpip.h>
 
-namespace net {
+namespace {
 
 	class winsock_initializer{ // It's Singlton.
 		bool is_initialized_ = false;
